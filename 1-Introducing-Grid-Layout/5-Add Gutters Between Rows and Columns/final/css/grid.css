@@ -5,8 +5,11 @@
 .grid {
   max-width: 1000px;
   display: grid;
-  grid-template-rows: 100px 200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 100px 100px; /*zwei implizite rows*/
   grid-gap: 15px; /*row and column*/
+  grid-auto-columns: 1fr; /*stellt alle kommenden columns auf 1fr*/
+  grid-auto-flow: column;
 }
 
 
